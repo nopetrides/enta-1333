@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -25,6 +26,7 @@ public class BuildingPlacementManager : MonoBehaviour
     /// If we have a <see cref="_buildingToPlace"/> then show the ghost for it at the mouse position
     /// This will need to calculate where ground is.
     /// </summary>
+    private Dictionary<string, GameObject> _ghostObjects = new();
     private void Update()
     {
         if (_buildingToPlace == null)
@@ -34,9 +36,23 @@ public class BuildingPlacementManager : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hitInfo, 20, GroundMask))
         {
             Debug.Log(hitInfo.collider.name);
-            
-            if (_placementGhost == null )
+
+            if (_placementGhost != null)
+            {
+                _placementGhost.SetActive(false);
+            }
+
+            if (_ghostObjects.TryGetValue(_buildingToPlace.BuildingGhostPrefab.name, out var existingGhost))
+            {
+                _placementGhost = existingGhost;
+                _placementGhost.SetActive(true);
+            }
+            else
+            {
                 _placementGhost = Instantiate(_buildingToPlace.BuildingGhostPrefab, transform);
+                _ghostObjects.Add(_buildingToPlace.BuildingGhostPrefab.name, _placementGhost);
+            }
+
             _placementGhost.transform.position = hitInfo.point;
         }
     }
