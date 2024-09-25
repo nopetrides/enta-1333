@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHp: c8000000
   _armor: 5
-  _buildingGhostPrefab: {fileID: 6369266610660843138, guid: b31072cb24667fc46a18b0be9ece22f8,
+  _buildingGhostPrefab: {fileID: 6369266610660843138, guid: ce85810977f22174f8f4c30a0e159e6e,
     type: 3}
-  _buildingPlacedPrefab: {fileID: 6369266610660843138, guid: 4ef41b2447725ce40a7ceca05e024274,
+  _buildingPlacedPrefab: {fileID: 4450510067612245212, guid: 4ef41b2447725ce40a7ceca05e024274,
     type: 3}
   _buildingSprite: {fileID: 21300000, guid: 490e22801effa4e4fbcf0fcc9abe14ab, type: 3}
   _kindOfStructure: 3
+  _buildingName: Tower

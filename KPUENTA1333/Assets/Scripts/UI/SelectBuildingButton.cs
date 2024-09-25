@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class SelectBuildingButton : MonoBehaviour
 {
     [SerializeField] private Image BuildingSprite;
+    [SerializeField] private TMP_Text BuildingText;
 
     private BuildingData _data;
     private BuildingPlacementManager _manager;
@@ -14,6 +16,7 @@ public class SelectBuildingButton : MonoBehaviour
         _manager = manager;
         // setup ui of the button
         BuildingSprite.sprite = data.BuildingSprite;
+        BuildingText.text = data.BuildingName;
     }
 
     public void OnButtonSelected()

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -8,11 +9,16 @@ using UnityEngine;
 public class BuildingPlacementManager : MonoBehaviour
 {
     [SerializeField] private AllBuildingData _allBuildingData;
-    [SerializeField] private LayerMask GroundMask;
+    [SerializeField] private LayerMask _groundMask;
+    [SerializeField] private ParticleSystem _placementParticle;
+    [SerializeField] private Material _canPlaceMaterial;
+    [SerializeField] private Material _cannotPlaceMaterial;
+
     public AllBuildingData AllBuildings => _allBuildingData;
     
     private BuildingData _buildingToPlace = null;
     private GameObject _placementGhost = null;
+    private PlayerBuildingManager _localPlayerBuildingManager = null;
 
     /// <summary>
     /// Called by the <see cref="BuildingPlacementUI"/>
@@ -27,13 +33,14 @@ public class BuildingPlacementManager : MonoBehaviour
     /// This will need to calculate where ground is.
     /// </summary>
     private Dictionary<string, GameObject> _ghostObjects = new();
+
     private void Update()
     {
         if (_buildingToPlace == null)
             return;
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, 20, GroundMask))
+        if (Physics.Raycast(ray, out RaycastHit hitInfo, 20000, _groundMask))
         {
             Debug.Log(hitInfo.collider.name);
 
@@ -51,14 +58,74 @@ public class BuildingPlacementManager : MonoBehaviour
             {
                 _placementGhost = Instantiate(_buildingToPlace.BuildingGhostPrefab, transform);
                 _ghostObjects.Add(_buildingToPlace.BuildingGhostPrefab.name, _placementGhost);
+                ValidPlacement();
             }
 
             _placementGhost.transform.position = hitInfo.point;
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                PlaceBuilding(hitInfo.point);
+            }
+        }
+
+    }
+
+    /// <summary>
+    ///     Places a building at the designated location
+    /// </summary>
+    /// <param name="position"></param>
+    private void PlaceBuilding(Vector3 position)
+    {
+        _placementParticle.transform.position = position;
+        _placementParticle.Play();
+
+        var placedBuilding = Instantiate<PlacedBuildingBase>(_buildingToPlace.BuildingPlacedPrefab, position, Quaternion.identity);
+
+
+        _localPlayerBuildingManager.AddBuilding(placedBuilding);
+        
+        _placementGhost.SetActive(false);
+        _placementGhost = null;
+        _buildingToPlace = null;
+    }
+
+    private void InvalidPlacement()
+    {
+        if (_placementGhost != null)
+        {
+            var mrList = _placementGhost.GetComponentsInChildren<MeshRenderer>();
+            foreach (var mr in mrList)
+            {
+                var mats = mr.materials;
+                for (int i = 0; i < mats.Length; i++)
+                {
+                    mats[i] = _cannotPlaceMaterial;
+                }
+                mr.SetMaterials(mats.ToList());
+            }
         }
     }
 
-    private void PlaceBuilding()
+    private void ValidPlacement()
     {
+        if (_placementGhost != null)
+        {
+            var mrList = _placementGhost.GetComponentsInChildren<MeshRenderer>();
+            foreach(var mr in mrList)
+            {
+                var mats = mr.materials;
+                for (int i = 0; i < mats.Length; i++)
+                {
+                    mats[i] = _canPlaceMaterial;
+                }
+                mr.SetMaterials(mats.ToList());
+            }
+        }
+    }
 
+    public void SetLocalBuildingManager(PlayerBuildingManager playerBuildingManager)
+    {
+        _localPlayerBuildingManager = playerBuildingManager;
     }
 }

@@ -8,7 +8,7 @@ public class BuildingData : ScriptableObject
     [SerializeField] private int[] _maxHp;
     [SerializeField] private int _armor;
     [SerializeField] private GameObject _buildingGhostPrefab;
-    [SerializeField] private GameObject _buildingPlacedPrefab;
+    [SerializeField] private PlacedBuildingBase _buildingPlacedPrefab;
     [SerializeField] private Sprite _buildingSprite;
     [SerializeField] private BuildingType _kindOfStructure;
     [SerializeField] private string _buildingName;
@@ -16,7 +16,7 @@ public class BuildingData : ScriptableObject
     public int[] MaxHp => _maxHp;
     public int Armor => _armor;
     public GameObject BuildingGhostPrefab => _buildingGhostPrefab;
-    public GameObject BuildingPlacedPrefab => _buildingPlacedPrefab;
+    public PlacedBuildingBase BuildingPlacedPrefab => _buildingPlacedPrefab;
     public Sprite BuildingSprite => _buildingSprite;
     public BuildingType KindOfStructure => _kindOfStructure;
     public string BuildingName => _buildingName;

@@ -4,13 +4,20 @@ public class PlacedBuildingBase : MonoBehaviour
 {
     [SerializeField] private BuildingData ScriptedObjectData;
 
-    private int CurrentHp;
-    private int BuildingLevel;
+    private int _currentHp;
+    private int _buildingLevel;
+
+    protected PlayerBuildingManager _manager;
 
     private void Start()
     {
-        CurrentHp = ScriptedObjectData.MaxHp[0];
-        BuildingLevel = 1;
+        _currentHp = ScriptedObjectData.MaxHp[0];
+        _buildingLevel = 1;
+    }
+
+    public void SetManager(PlayerBuildingManager manager)
+    {
+        _manager = manager;
     }
 
     public void CalculateDamage(int damageReceived)
@@ -21,11 +28,11 @@ public class PlacedBuildingBase : MonoBehaviour
     
     private void TakeDamage(int damageTaken)
     {
-        CurrentHp -= damageTaken;
+        _currentHp -= damageTaken;
     }
 
     public void CanLevelUp()
     {
-        ScriptedObjectData.CanLevelUp(BuildingLevel);
+        ScriptedObjectData.CanLevelUp(_buildingLevel);
     }
 }
