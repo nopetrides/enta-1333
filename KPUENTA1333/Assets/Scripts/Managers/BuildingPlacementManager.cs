@@ -13,6 +13,8 @@ public class BuildingPlacementManager : MonoBehaviour
     [SerializeField] private ParticleSystem _placementParticle;
     [SerializeField] private Material _canPlaceMaterial;
     [SerializeField] private Material _cannotPlaceMaterial;
+    [SerializeField] private LayerMask _buildingMask;
+    [SerializeField] private DismantleBuildingUI _dismantleUI;
 
     public AllBuildingData AllBuildings => _allBuildingData;
     
@@ -36,14 +38,24 @@ public class BuildingPlacementManager : MonoBehaviour
 
     private void Update()
     {
-        if (_buildingToPlace == null)
-            return;
-
+        RaycastHit hitInfo;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out RaycastHit hitInfo, 20000, _groundMask))
+        if (_buildingToPlace == null)
         {
-            Debug.Log(hitInfo.collider.name);
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (Physics.Raycast(ray, out hitInfo, 20000, _buildingMask))
+                {
+                    Debug.Log(hitInfo.collider.name);
+                    var buildingClicked = hitInfo.transform.GetComponentInParent<PlacedBuildingBase>();
+                    _dismantleUI.Open(buildingClicked);
+                }
+            }
+            return;
+        }
 
+        if (Physics.Raycast(ray, out hitInfo, 20000, _groundMask))
+        {
             if (_placementGhost != null)
             {
                 _placementGhost.SetActive(false);
@@ -68,7 +80,6 @@ public class BuildingPlacementManager : MonoBehaviour
                 PlaceBuilding(hitInfo.point);
             }
         }
-
     }
 
     /// <summary>

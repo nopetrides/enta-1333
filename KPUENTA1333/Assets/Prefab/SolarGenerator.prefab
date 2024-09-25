@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8268205618975333827}
   - component: {fileID: 2241516284312055355}
   - component: {fileID: 4187626012318939886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4749686379364892586}
   - component: {fileID: 2875425008685971312}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SolarGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}

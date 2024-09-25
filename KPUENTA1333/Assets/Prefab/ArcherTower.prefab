@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4797150092246180236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3600426376973214695}
   - component: {fileID: 4450510067612245212}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ArcherTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,6 +361,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -455,6 +460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -610,6 +620,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-a
       objectReference: {fileID: 0}
+    - target: {fileID: 9091053822660475118, guid: 613423ec14f1d95428a6766c182d90bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -704,6 +719,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -727,6 +747,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -892,6 +917,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -915,6 +945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -1010,6 +1045,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -1103,6 +1143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720294552278533531, guid: f17aa85782d51024686d0bdf1502ffc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5389131235525549857, guid: f17aa85782d51024686d0bdf1502ffc1,
         type: 3}
@@ -1268,6 +1313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-1m-edge-out-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 3253572533610080247, guid: 1ea1f146017257141af21db2802c42cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1291,6 +1341,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -1456,6 +1511,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1479,6 +1539,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -1574,6 +1639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-1x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 8594835962932800743, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8938850767682205277, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -1667,6 +1737,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -1817,6 +1892,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1911,6 +1991,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1934,6 +2019,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -2089,6 +2179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2112,6 +2207,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -2206,6 +2306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294829552866934061, guid: d2c42595caad20f4c8bdb6853701c6da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1924154362368616343, guid: d2c42595caad20f4c8bdb6853701c6da,
         type: 3}
@@ -2371,6 +2476,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2394,6 +2504,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -2559,6 +2674,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2653,6 +2773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2676,6 +2801,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -2771,6 +2901,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-1x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 8594835962932800743, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8938850767682205277, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -2865,6 +3000,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-1m
       objectReference: {fileID: 0}
+    - target: {fileID: 1294829552866934061, guid: d2c42595caad20f4c8bdb6853701c6da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1924154362368616343, guid: d2c42595caad20f4c8bdb6853701c6da,
         type: 3}
       propertyPath: m_RootOrder
@@ -2958,6 +3098,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -3123,6 +3268,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3217,6 +3367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3240,6 +3395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -3334,6 +3494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -3489,6 +3654,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3583,6 +3753,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3666,6 +3841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3761,6 +3941,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3854,6 +4039,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-4x3m-ext
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
@@ -3954,6 +4144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -4052,6 +4247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-4x3m-ext
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
@@ -4152,6 +4352,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-steep-2x2m-corner-out-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 7771808269444295571, guid: 9a37f31cd87a4e241bef6773df95fe7c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4175,6 +4380,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -4340,6 +4550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4363,6 +4578,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -4457,6 +4677,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -4622,6 +4847,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4645,6 +4875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -4755,6 +4990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ceiling-3x3m (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8454807027140845148, guid: f0e4f7a7789481246b6be2e287de1091,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9087791938845050086, guid: f0e4f7a7789481246b6be2e287de1091,
         type: 3}
       propertyPath: m_RootOrder
@@ -4833,6 +5073,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -4927,6 +5172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -5092,6 +5342,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5175,6 +5430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5270,6 +5530,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5363,6 +5628,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-rim-metal
+      objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5458,6 +5728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5481,6 +5756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -5576,6 +5856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
       objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
       propertyPath: m_RootOrder
@@ -5669,6 +5954,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -5819,6 +6109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5842,6 +6137,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -5936,6 +6236,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -6106,6 +6411,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x1m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 2001154914493788021, guid: a686a568598e21e4da6d124f6697f756,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6189,6 +6499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6284,6 +6599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6378,6 +6698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6401,6 +6726,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor-3x3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108996840594257491, guid: 92a7b0240827ffe469183715f738bb81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7630199869089443049, guid: 92a7b0240827ffe469183715f738bb81,
         type: 3}
@@ -6571,6 +6901,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-steep-2x2m-corner-out-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 7771808269444295571, guid: 9a37f31cd87a4e241bef6773df95fe7c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6665,6 +7000,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6688,6 +7028,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -6853,6 +7198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6876,6 +7226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -7041,6 +7396,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7064,6 +7424,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -7219,6 +7584,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7242,6 +7612,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -7342,6 +7717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-1x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 8594835962932800743, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8938850767682205277, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
         type: 3}
       propertyPath: m_RootOrder
@@ -7436,6 +7816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -7529,6 +7914,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-2x2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534179679609959423, guid: c6a96df0283897840924e645091695c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4197422047694842181, guid: c6a96df0283897840924e645091695c0,
         type: 3}
@@ -7694,6 +8084,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7713,6 +8108,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4797150092246180236}
     m_Modifications:
+    - target: {fileID: 181742699146115504, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 811719652347533590, guid: 41ef5c59c40dea84a812089f8b8e5f79,
         type: 3}
       propertyPath: m_RootOrder
@@ -7783,10 +8183,90 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1052342576053410943, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418498341423006154, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2283182393644680312, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624686231602938252, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750416344842381199, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896933993210433949, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3897317602076401910, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4189695807012779597, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4473087929372214110, guid: 41ef5c59c40dea84a812089f8b8e5f79,
         type: 3}
       propertyPath: m_Name
       value: assembly-house-entrance-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4473087929372214110, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556364521409492353, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479430584350583493, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6023111199043124179, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016942320062504406, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7329910461511745547, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650978488834485584, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8734714294196251202, guid: 41ef5c59c40dea84a812089f8b8e5f79,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7882,6 +8362,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-window-2x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7941698138601330987, guid: 34ae7e8d19abb2c4ea56872ef7ef0b37,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8446052575116605694, guid: 34ae7e8d19abb2c4ea56872ef7ef0b37,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -7910,6 +8395,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -8070,6 +8560,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-1m-edge-out-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 3253572533610080247, guid: 1ea1f146017257141af21db2802c42cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8163,6 +8658,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8258,6 +8758,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8281,6 +8786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -8376,6 +8886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -8470,6 +8985,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -8563,6 +9083,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -8728,6 +9253,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8821,6 +9351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8916,6 +9451,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9000,6 +9540,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9023,6 +9568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -9112,6 +9662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -9277,6 +9832,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9300,6 +9860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -9465,6 +10030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9548,6 +10118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9643,6 +10218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9666,6 +10246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -9760,6 +10345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -9925,6 +10515,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -9953,6 +10548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -10048,6 +10648,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
       propertyPath: m_RootOrder
@@ -10141,6 +10746,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -10236,6 +10846,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2x2m-corner-out-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 1628301285744606625, guid: 7533d90bd47a49549883788580b3b7a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2149118385410942747, guid: 7533d90bd47a49549883788580b3b7a3,
         type: 3}
       propertyPath: m_RootOrder
@@ -10329,6 +10944,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -10494,6 +11114,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -10593,6 +11218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10616,6 +11246,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -10710,6 +11345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -10875,6 +11515,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10898,6 +11543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -10993,6 +11643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
       propertyPath: m_RootOrder
@@ -11086,6 +11741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -11251,6 +11911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11274,6 +11939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-corner-out-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628301285744606625, guid: 7533d90bd47a49549883788580b3b7a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2149118385410942747, guid: 7533d90bd47a49549883788580b3b7a3,
         type: 3}
@@ -11439,6 +12109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-a
       objectReference: {fileID: 0}
+    - target: {fileID: 9091053822660475118, guid: 613423ec14f1d95428a6766c182d90bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11518,6 +12193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11541,6 +12221,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -11636,6 +12321,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
       propertyPath: m_RootOrder
@@ -11729,6 +12419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -11824,6 +12519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -11917,6 +12617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -12082,6 +12787,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -12181,6 +12891,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12204,6 +12919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -12354,6 +13074,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12377,6 +13102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -12472,6 +13202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -12566,6 +13301,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -12659,6 +13399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -12819,6 +13564,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12912,6 +13662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13007,6 +13762,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-a
       objectReference: {fileID: 0}
+    - target: {fileID: 9091053822660475118, guid: 613423ec14f1d95428a6766c182d90bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13100,6 +13860,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-4x3m-ext
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
@@ -13200,6 +13965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -13228,6 +13998,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -13393,6 +14168,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13486,6 +14266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13586,6 +14371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x1m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 2001154914493788021, guid: a686a568598e21e4da6d124f6697f756,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13670,6 +14460,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13698,6 +14493,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-1x3m-ext
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594835962932800743, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8938850767682205277, guid: bdb3ddbd2ba943d409fe7cf510c432d6,
         type: 3}
@@ -13863,6 +14663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -13891,6 +14696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -14056,6 +14866,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14149,6 +14964,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14244,6 +15064,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -14272,6 +15097,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-2x2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534179679609959423, guid: c6a96df0283897840924e645091695c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4197422047694842181, guid: c6a96df0283897840924e645091695c0,
         type: 3}
@@ -14427,6 +15257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14521,6 +15356,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14544,6 +15384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -14694,6 +15539,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14717,6 +15567,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -14872,6 +15727,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14895,6 +15755,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -15060,6 +15925,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -15088,6 +15958,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor-3x3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108996840594257491, guid: 92a7b0240827ffe469183715f738bb81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7630199869089443049, guid: 92a7b0240827ffe469183715f738bb81,
         type: 3}
@@ -15188,6 +16063,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: balcony-support-decor-out-a
       objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -15282,6 +16162,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2x2m-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 4720294552278533531, guid: f17aa85782d51024686d0bdf1502ffc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5389131235525549857, guid: f17aa85782d51024686d0bdf1502ffc1,
         type: 3}
       propertyPath: m_RootOrder
@@ -15375,6 +16260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -15530,6 +16420,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15624,6 +16519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15717,6 +16617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-4x3m-ext
+      objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
@@ -15817,6 +16722,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15840,6 +16750,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-2x2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534179679609959423, guid: c6a96df0283897840924e645091695c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4197422047694842181, guid: c6a96df0283897840924e645091695c0,
         type: 3}
@@ -16005,6 +16920,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16028,6 +16948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -16183,6 +17108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16276,6 +17206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16371,6 +17306,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16394,6 +17334,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor-3x3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108996840594257491, guid: 92a7b0240827ffe469183715f738bb81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7630199869089443049, guid: 92a7b0240827ffe469183715f738bb81,
         type: 3}
@@ -16564,6 +17509,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16647,6 +17597,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16732,6 +17687,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16755,6 +17715,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720294552278533531, guid: f17aa85782d51024686d0bdf1502ffc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5389131235525549857, guid: f17aa85782d51024686d0bdf1502ffc1,
         type: 3}
@@ -16849,6 +17814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -17014,6 +17984,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-1m-edge-out-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 3253572533610080247, guid: 1ea1f146017257141af21db2802c42cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17037,6 +18012,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -17202,6 +18182,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17225,6 +18210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -17385,6 +18375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17478,6 +18473,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17573,6 +18573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-1m-edge-out-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 3253572533610080247, guid: 1ea1f146017257141af21db2802c42cb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17666,6 +18671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17761,6 +18771,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -17789,6 +18804,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -17883,6 +18903,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4720294552278533531, guid: f17aa85782d51024686d0bdf1502ffc1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5389131235525549857, guid: f17aa85782d51024686d0bdf1502ffc1,
         type: 3}
@@ -18048,6 +19073,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18071,6 +19101,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -18236,6 +19271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-steep-2x2m-corner-out-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 7771808269444295571, guid: 9a37f31cd87a4e241bef6773df95fe7c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18274,6 +19314,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceiling-3x3m (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454807027140845148, guid: f0e4f7a7789481246b6be2e287de1091,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9087791938845050086, guid: f0e4f7a7789481246b6be2e287de1091,
         type: 3}
@@ -18424,6 +19469,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -18507,6 +19557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18602,6 +19657,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18625,6 +19685,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-corner-out-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628301285744606625, guid: 7533d90bd47a49549883788580b3b7a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2149118385410942747, guid: 7533d90bd47a49549883788580b3b7a3,
         type: 3}
@@ -18790,6 +19855,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18813,6 +19883,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-2x2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 3534179679609959423, guid: c6a96df0283897840924e645091695c0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4197422047694842181, guid: c6a96df0283897840924e645091695c0,
         type: 3}
@@ -18978,6 +20053,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19001,6 +20081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -19096,6 +20181,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -19189,6 +20279,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -19339,6 +20434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19423,6 +20523,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19446,6 +20551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -19611,6 +20721,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19634,6 +20749,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: floor-3x3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108996840594257491, guid: 92a7b0240827ffe469183715f738bb81,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7630199869089443049, guid: 92a7b0240827ffe469183715f738bb81,
         type: 3}
@@ -19804,6 +20924,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19898,6 +21023,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19991,6 +21121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20091,6 +21226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x1m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 2001154914493788021, guid: a686a568598e21e4da6d124f6697f756,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20114,6 +21254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -20274,6 +21419,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20297,6 +21447,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -20462,6 +21617,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20481,6 +21641,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4797150092246180236}
     m_Modifications:
+    - target: {fileID: 2091090517074085418, guid: 03935989a9185104cab32d0e77f1eef0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426944277301096561, guid: 03935989a9185104cab32d0e77f1eef0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7590091797818186856, guid: 03935989a9185104cab32d0e77f1eef0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8164611644045194721, guid: 03935989a9185104cab32d0e77f1eef0,
         type: 3}
       propertyPath: m_RootOrder
@@ -20556,6 +21731,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: window-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 8792530213136543579, guid: 03935989a9185104cab32d0e77f1eef0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20579,6 +21759,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
@@ -20734,6 +21919,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20757,6 +21947,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -20902,6 +22097,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20925,6 +22125,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -21020,6 +22225,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
       objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
       propertyPath: m_RootOrder
@@ -21113,6 +22323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -21278,6 +22493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21316,6 +22536,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceiling-3x3m (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454807027140845148, guid: f0e4f7a7789481246b6be2e287de1091,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9087791938845050086, guid: f0e4f7a7789481246b6be2e287de1091,
         type: 3}
@@ -21466,6 +22691,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: railing-wood-b-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 3385915247916541181, guid: 093a071072df8a340b8e14ef23dbe632,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21545,6 +22775,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21568,6 +22803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -21663,6 +22903,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: balcony-support-decor-out-a
       objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
       propertyPath: m_RootOrder
@@ -21757,6 +23002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
       propertyPath: m_RootOrder
@@ -21850,6 +23100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -22015,6 +23270,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-a
       objectReference: {fileID: 0}
+    - target: {fileID: 9091053822660475118, guid: 613423ec14f1d95428a6766c182d90bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22109,6 +23369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -22137,6 +23402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: railing-wood-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618323682139394939, guid: 980daf6b1d825f84d86543ad855982d5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8994180035198912961, guid: 980daf6b1d825f84d86543ad855982d5,
         type: 3}
@@ -22302,6 +23572,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22325,6 +23600,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -22419,6 +23699,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: balcony-support-decor-out-a
+      objectReference: {fileID: 0}
+    - target: {fileID: 4627753699426273342, guid: 25a5d1fb8be01b3469041de825e416a9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5436625214932636292, guid: 25a5d1fb8be01b3469041de825e416a9,
         type: 3}
@@ -22584,6 +23869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22678,6 +23968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -22706,6 +24001,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -22801,6 +24101,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -22894,6 +24199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -23059,6 +24369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23082,6 +24397,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294829552866934061, guid: d2c42595caad20f4c8bdb6853701c6da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1924154362368616343, guid: d2c42595caad20f4c8bdb6853701c6da,
         type: 3}
@@ -23177,6 +24497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -23270,6 +24595,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
+      objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
@@ -23435,6 +24765,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-bend-out-b-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 9215364685766043101, guid: 6a65dc66730b66a4e9bf9a916a08282b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23458,6 +24793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-decor-corner-stone-out-3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 7026221654582764719, guid: a94af412a84a4ea46b6e7e4c5907133d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7694954060585139733, guid: a94af412a84a4ea46b6e7e4c5907133d,
         type: 3}
@@ -23553,6 +24893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
       objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
       propertyPath: m_RootOrder
@@ -23647,6 +24992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
       objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
       propertyPath: m_RootOrder
@@ -23740,6 +25090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -23895,6 +25250,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
       objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23918,6 +25278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -24083,6 +25448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-4x3m-ext
       objectReference: {fileID: 0}
+    - target: {fileID: 7543808591967866393, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8336164568781254604, guid: 7ba570d9fa77a1c4cb7937617471fcdf,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -24111,6 +25481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-deco-wood-rim-b
+      objectReference: {fileID: 0}
+    - target: {fileID: 220265913580079749, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 595981494453866559, guid: 1a0f2aedc54fc5f4d8b0571c73efa937,
         type: 3}
@@ -24276,6 +25651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24370,6 +25750,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: beam-horizontal-a-end-b
       objectReference: {fileID: 0}
+    - target: {fileID: 5226642420585749252, guid: 53dcd1c8c8a46244aa169397c6e76d4d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24408,6 +25793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ceiling-3x3m
+      objectReference: {fileID: 0}
+    - target: {fileID: 8454807027140845148, guid: f0e4f7a7789481246b6be2e287de1091,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9087791938845050086, guid: f0e4f7a7789481246b6be2e287de1091,
         type: 3}
@@ -24487,6 +25877,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -24582,6 +25977,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-regular-2m-edge-a-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 222060793686889641, guid: d654e47c8254a1a4992082402ac16eba,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 603266506965372435, guid: d654e47c8254a1a4992082402ac16eba,
         type: 3}
       propertyPath: m_RootOrder
@@ -24675,6 +26075,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: roof-regular-2x2m-corner-out-fantasy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628301285744606625, guid: 7533d90bd47a49549883788580b3b7a3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2149118385410942747, guid: 7533d90bd47a49549883788580b3b7a3,
         type: 3}
@@ -24770,6 +26175,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
       objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
       propertyPath: m_RootOrder
@@ -24864,6 +26274,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-4m
       objectReference: {fileID: 0}
+    - target: {fileID: 14290740524848050, guid: c9cec75c9dff27b46b42c6ca29c167e4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 826716156298512648, guid: c9cec75c9dff27b46b42c6ca29c167e4,
         type: 3}
       propertyPath: m_RootOrder
@@ -24957,6 +26372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -25122,6 +26542,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: roof-steep-2x2m-corner-out-fantasy
       objectReference: {fileID: 0}
+    - target: {fileID: 7771808269444295571, guid: 9a37f31cd87a4e241bef6773df95fe7c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25145,6 +26570,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-2m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646895084912782233, guid: 23e65b7b84d940d49a503eec7ab136ac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2130522539689013539, guid: 23e65b7b84d940d49a503eec7ab136ac,
         type: 3}
@@ -25239,6 +26669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-horizontal-mid-out-a-1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 1294829552866934061, guid: d2c42595caad20f4c8bdb6853701c6da,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1924154362368616343, guid: d2c42595caad20f4c8bdb6853701c6da,
         type: 3}
@@ -25404,6 +26839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-decor-rim-metal
       objectReference: {fileID: 0}
+    - target: {fileID: 5268332880230431175, guid: 3937820c675f67f4aabfcb917ba109b9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25498,6 +26938,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wall-beam-vertical-corner-out-a-3m
       objectReference: {fileID: 0}
+    - target: {fileID: 734631401483435989, guid: 75c9be7d03529fa4494e3beaf677d940,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25581,6 +27026,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wall-beam-diagonal-out-a-1x1m
+      objectReference: {fileID: 0}
+    - target: {fileID: 4323549450276555669, guid: 901b90a544270ba4c99c3e084bef4d78,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
