@@ -11,6 +11,7 @@ public class BuildingData : ScriptableObject
     [SerializeField] private GameObject _buildingPlacedPrefab;
     [SerializeField] private Sprite _buildingSprite;
     [SerializeField] private BuildingType _kindOfStructure;
+    [SerializeField] private string _buildingName;
 
     public int[] MaxHp => _maxHp;
     public int Armor => _armor;
@@ -18,6 +19,7 @@ public class BuildingData : ScriptableObject
     public GameObject BuildingPlacedPrefab => _buildingPlacedPrefab;
     public Sprite BuildingSprite => _buildingSprite;
     public BuildingType KindOfStructure => _kindOfStructure;
+    public string BuildingName => _buildingName;
 
     public bool CanLevelUp(int currentLevel)
     {

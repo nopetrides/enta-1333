@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 496164129669424828}
   - component: {fileID: 3490255241325730085}
   m_Layer: 0
-  m_Name: SolarGeneratorBuildingGhost
+  m_Name: SolarGenerator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be10a23a1fa69734fa7e99a3544275bb, type: 2}
+  - {fileID: 2100000, guid: 8074251272a4046c1b8559030641bbec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
