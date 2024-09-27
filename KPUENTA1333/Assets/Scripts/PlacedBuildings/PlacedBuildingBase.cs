@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlacedBuildingBase : MonoBehaviour
@@ -8,6 +9,7 @@ public class PlacedBuildingBase : MonoBehaviour
     private int _buildingLevel;
 
     protected PlayerBuildingManager _manager;
+    protected Player _owner;
 
     private void Start()
     {
@@ -15,9 +17,11 @@ public class PlacedBuildingBase : MonoBehaviour
         _buildingLevel = 1;
     }
 
-    public void SetManager(PlayerBuildingManager manager)
+    public void SetManager(PlayerBuildingManager manager, ref Action onTick, Player owner)
     {
         _manager = manager;
+        onTick += Tick;
+        _owner = owner;
     }
 
     public void CalculateDamage(int damageReceived)
@@ -34,5 +38,9 @@ public class PlacedBuildingBase : MonoBehaviour
     public void CanLevelUp()
     {
         ScriptedObjectData.CanLevelUp(_buildingLevel);
+    }
+
+    protected virtual void Tick()
+    {
     }
 }

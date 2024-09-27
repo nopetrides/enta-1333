@@ -8,8 +8,7 @@ public class SolarGenerator : PlacedBuildingBase
     [SerializeField] private float PowerPerCycle = 10f;
     private float generatorTimer = 0f;
     
-    
-    private void Update()
+    protected override void Tick()
     {
         generatorTimer += Time.deltaTime;
 
@@ -22,7 +21,6 @@ public class SolarGenerator : PlacedBuildingBase
 
     private void AddPowerToPowerStorage()
     {
-        // todo
-        // Add PowerPerCycle to player storage manager
+        _owner.ResourceGain(PowerPerCycle);
     }
 }

@@ -21,6 +21,7 @@ public class BuildingPlacementManager : MonoBehaviour
     private BuildingData _buildingToPlace = null;
     private GameObject _placementGhost = null;
     private PlayerBuildingManager _localPlayerBuildingManager = null;
+    private bool _allowPlace = true;
 
     /// <summary>
     /// Called by the <see cref="BuildingPlacementUI"/>
@@ -38,6 +39,10 @@ public class BuildingPlacementManager : MonoBehaviour
 
     private void Update()
     {
+        if (!_allowPlace)
+        {
+            return;
+        }
         RaycastHit hitInfo;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         if (_buildingToPlace == null)
@@ -138,5 +143,10 @@ public class BuildingPlacementManager : MonoBehaviour
     public void SetLocalBuildingManager(PlayerBuildingManager playerBuildingManager)
     {
         _localPlayerBuildingManager = playerBuildingManager;
+    }
+
+    public void TogglePlacement(bool canPlace)
+    {
+        _allowPlace = canPlace;
     }
 }
