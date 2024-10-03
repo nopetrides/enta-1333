@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEditor.FilePathAttribute;
 
 /// <summary>
 /// This is the controller for placing buildings.
@@ -15,6 +16,8 @@ public class BuildingPlacementManager : MonoBehaviour
     [SerializeField] private Material _cannotPlaceMaterial;
     [SerializeField] private LayerMask _buildingMask;
     [SerializeField] private DismantleBuildingUI _dismantleUI;
+
+    [SerializeField] private GameManager _gameManager;
 
     public AllBuildingData AllBuildings => _allBuildingData;
     
@@ -78,11 +81,13 @@ public class BuildingPlacementManager : MonoBehaviour
                 ValidPlacement();
             }
 
-            _placementGhost.transform.position = hitInfo.point;
+            var pos = _gameManager.GameGrid.GetCellWorldCenter(hitInfo.point);
+
+            _placementGhost.transform.position = pos;
 
             if (Input.GetMouseButtonDown(0))
             {
-                PlaceBuilding(hitInfo.point);
+                PlaceBuilding(pos);
             }
         }
     }
@@ -148,5 +153,10 @@ public class BuildingPlacementManager : MonoBehaviour
     public void TogglePlacement(bool canPlace)
     {
         _allowPlace = canPlace;
+    }
+
+    internal void SetGameManager(GameManager gameManager)
+    {
+        _gameManager = gameManager;
     }
 }

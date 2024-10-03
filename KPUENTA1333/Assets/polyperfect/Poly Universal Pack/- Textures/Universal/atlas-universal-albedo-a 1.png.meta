@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5484b2c0e3fe5ca4d98cc56a3eeba800
+guid: 2390120c5aa71cf438c2cf77f1b1d0e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -90,10 +90,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 215157
-  packageName: Poly Universal Pack
-  packageVersion: 3.6.0
-  assetPath: Assets/polyperfect/Poly Universal Pack/- Textures/Universal/universal-mask-map.tif
-  uploadId: 691449
