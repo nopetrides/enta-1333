@@ -492,6 +492,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -567,7 +568,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: -0.47398356, y: -0.00079490745, z: 0.00042790946, w: -0.8805332}
-  m_LocalPosition: {x: 0.6667595, y: 161.09708, z: -142.53207}
+  m_LocalPosition: {x: 0, y: 161.09708, z: -142.53207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -617,6 +618,28 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7651bdd1f32ef64e95f06fcfc8b1de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _zoomSpeed: 100
+  _zoomTime: 0.1
+  _maxHeight: 100
+  _minHeight: 20
+  _focusHeight: 10
+  _focusDistance: 20
+  _panBorder: 25
+  _dragPanSpeed: 25
+  _edgePanSpeed: 25
+  _keyPanSpeed: 25
 --- !u!1 &334962579
 GameObject:
   m_ObjectHideFlags: 0
