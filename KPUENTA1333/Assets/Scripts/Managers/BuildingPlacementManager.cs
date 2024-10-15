@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using static UnityEditor.FilePathAttribute;
 
 /// <summary>
@@ -9,17 +10,17 @@ using static UnityEditor.FilePathAttribute;
 /// </summary>
 public class BuildingPlacementManager : MonoBehaviour
 {
-    [SerializeField] private AllBuildingData _allBuildingData;
-    [SerializeField] private LayerMask _groundMask;
-    [SerializeField] private ParticleSystem _placementParticle;
-    [SerializeField] private Material _canPlaceMaterial;
-    [SerializeField] private Material _cannotPlaceMaterial;
-    [SerializeField] private LayerMask _buildingMask;
-    [SerializeField] private DismantleBuildingUI _dismantleUI;
+    [FormerlySerializedAs("_allBuildingData")] [SerializeField] private AllBuildingData AllBuildingData;
+    [FormerlySerializedAs("_groundMask")] [SerializeField] private LayerMask GroundMask;
+    [FormerlySerializedAs("_placementParticle")] [SerializeField] private ParticleSystem PlacementParticle;
+    [FormerlySerializedAs("_canPlaceMaterial")] [SerializeField] private Material CanPlaceMaterial;
+    [FormerlySerializedAs("_cannotPlaceMaterial")] [SerializeField] private Material CannotPlaceMaterial;
+    [FormerlySerializedAs("_buildingMask")] [SerializeField] private LayerMask BuildingMask;
+    [FormerlySerializedAs("_dismantleUI")] [SerializeField] private DismantleBuildingUI DismantleUI;
 
-    [SerializeField] private GameManager _gameManager;
+    [FormerlySerializedAs("_gameManager")] [SerializeField] private GameManager GameManager;
 
-    public AllBuildingData AllBuildings => _allBuildingData;
+    public AllBuildingData AllBuildings => AllBuildingData;
     
     private BuildingData _buildingToPlace = null;
     private GameObject _placementGhost = null;
@@ -52,36 +53,36 @@ public class BuildingPlacementManager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                if (Physics.Raycast(ray, out hitInfo, 20000, _buildingMask))
+                if (Physics.Raycast(ray, out hitInfo, 20000, BuildingMask))
                 {
                     Debug.Log(hitInfo.collider.name);
                     var buildingClicked = hitInfo.transform.GetComponentInParent<PlacedBuildingBase>();
-                    _dismantleUI.Open(buildingClicked);
+                    DismantleUI.Open(buildingClicked);
                 }
             }
             return;
         }
 
-        if (Physics.Raycast(ray, out hitInfo, 20000, _groundMask))
+        if (Physics.Raycast(ray, out hitInfo, 20000, GroundMask))
         {
             if (_placementGhost != null)
             {
                 _placementGhost.SetActive(false);
             }
 
-            if (_ghostObjects.TryGetValue(_buildingToPlace.BuildingGhostPrefab.name, out var existingGhost))
+            if (_ghostObjects.TryGetValue(_buildingToPlace.BuildingGhost.name, out var existingGhost))
             {
                 _placementGhost = existingGhost;
                 _placementGhost.SetActive(true);
             }
             else
             {
-                _placementGhost = Instantiate(_buildingToPlace.BuildingGhostPrefab, transform);
-                _ghostObjects.Add(_buildingToPlace.BuildingGhostPrefab.name, _placementGhost);
+                _placementGhost = Instantiate(_buildingToPlace.BuildingGhost, transform);
+                _ghostObjects.Add(_buildingToPlace.BuildingGhost.name, _placementGhost);
                 ValidPlacement();
             }
 
-            var pos = _gameManager.GameGrid.GetCellWorldCenter(hitInfo.point);
+            var pos = GameManager.GameGrid.GetCellWorldCenter(hitInfo.point);
 
             _placementGhost.transform.position = pos;
 
@@ -98,10 +99,10 @@ public class BuildingPlacementManager : MonoBehaviour
     /// <param name="position"></param>
     private void PlaceBuilding(Vector3 position)
     {
-        _placementParticle.transform.position = position;
-        _placementParticle.Play();
+        PlacementParticle.transform.position = position;
+        PlacementParticle.Play();
 
-        var placedBuilding = Instantiate<PlacedBuildingBase>(_buildingToPlace.BuildingPlacedPrefab, position, Quaternion.identity);
+        var placedBuilding = Instantiate<PlacedBuildingBase>(_buildingToPlace.BuildingPlacedBase, position, Quaternion.identity);
 
 
         _localPlayerBuildingManager.AddBuilding(placedBuilding);
@@ -121,7 +122,7 @@ public class BuildingPlacementManager : MonoBehaviour
                 var mats = mr.materials;
                 for (int i = 0; i < mats.Length; i++)
                 {
-                    mats[i] = _cannotPlaceMaterial;
+                    mats[i] = CannotPlaceMaterial;
                 }
                 mr.SetMaterials(mats.ToList());
             }
@@ -138,7 +139,7 @@ public class BuildingPlacementManager : MonoBehaviour
                 var mats = mr.materials;
                 for (int i = 0; i < mats.Length; i++)
                 {
-                    mats[i] = _canPlaceMaterial;
+                    mats[i] = CanPlaceMaterial;
                 }
                 mr.SetMaterials(mats.ToList());
             }
@@ -157,6 +158,6 @@ public class BuildingPlacementManager : MonoBehaviour
 
     internal void SetGameManager(GameManager gameManager)
     {
-        _gameManager = gameManager;
+        GameManager = gameManager;
     }
 }

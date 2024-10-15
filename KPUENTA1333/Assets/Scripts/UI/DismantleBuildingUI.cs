@@ -25,6 +25,8 @@ public class DismantleBuildingUI : MonoBehaviour
 
     public void ButtonConfirm()
     {
+        _placedBuilding.OnRemoved();
+        // todo replace with returning to pool
         Destroy(_placedBuilding?.gameObject);
 
         Close();

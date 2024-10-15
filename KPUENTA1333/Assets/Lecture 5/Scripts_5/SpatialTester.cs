@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class SpatialTester : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager;
+    [FormerlySerializedAs("_gameManager")] [SerializeField] private GameManager GameManager;
 
-    [SerializeField] private CellUnit _factionUnitA;
-    [SerializeField] private Transform _unitParentA;
-    [SerializeField] private CellUnit _factionUnitB;
-    [SerializeField] private Transform _unitParentB;
+    [FormerlySerializedAs("_factionUnitA")] [SerializeField] private CellUnit FactionUnitA;
+    [FormerlySerializedAs("_unitParentA")] [SerializeField] private Transform UnitParentA;
+    [FormerlySerializedAs("_factionUnitB")] [SerializeField] private CellUnit FactionUnitB;
+    [FormerlySerializedAs("_unitParentB")] [SerializeField] private Transform UnitParentB;
 
-    [SerializeField] private int _unitsToTestWith;
-    [SerializeField] private LayerMask _groundMask;
+    [FormerlySerializedAs("_unitsToTestWith")] [SerializeField] private int UnitsToTestWith;
+    [FormerlySerializedAs("_groundMask")] [SerializeField] private LayerMask GroundMask;
 
     // todo, use pooling
     private List<CellUnit> _unitsListA = new();
@@ -20,22 +21,22 @@ public class SpatialTester : MonoBehaviour
 
     private void Start()
     {
-        GenerateUnits(1, _factionUnitA, _unitParentA, ref _unitsListA);
-        GenerateUnits(2, _factionUnitB, _unitParentB, ref _unitsListB);
+        GenerateUnits(1, FactionUnitA, UnitParentA, ref _unitsListA);
+        GenerateUnits(2, FactionUnitB, UnitParentB, ref _unitsListB);
     }
 
     private void GenerateUnits(int faction, CellUnit unitPrefab, Transform parent, ref List<CellUnit> list)
     {
-        int mapWidth = _gameManager.GameGrid.Width * _gameManager.GameGrid.CellSize;
-        int mapHeight = _gameManager.GameGrid.Height * _gameManager.GameGrid.CellSize;
+        int mapWidth = GameManager.GameGrid.Width * GameManager.GameGrid.CellSize;
+        int mapHeight = GameManager.GameGrid.Height * GameManager.GameGrid.CellSize;
 
-        for (int i = 0; i < _unitsToTestWith; i++)
+        for (int i = 0; i < UnitsToTestWith; i++)
         {
             Vector3 randomPos = new Vector3(Random.Range(-mapWidth, mapWidth), 5f, Random.Range(-mapHeight, mapHeight));
 
             CellUnit cellUnit = Instantiate<CellUnit>(unitPrefab, randomPos, Quaternion.identity, parent);
 
-            cellUnit.Setup(faction, i, _gameManager.GameGrid);
+            cellUnit.Setup(faction, i, GameManager.GameGrid);
 
             list.Add(cellUnit);
         }
@@ -50,7 +51,7 @@ public class SpatialTester : MonoBehaviour
 
         foreach (var unit in _unitsListB)
         {
-            CellUnit closestEnemy = _gameManager.GameGrid.FindClosestOtherFactionUnit(unit);
+            CellUnit closestEnemy = GameManager.GameGrid.FindClosestOtherFactionUnit(unit);
 
             if (closestEnemy != null)
             {
@@ -61,14 +62,14 @@ public class SpatialTester : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (_gameManager == null || _gameManager.GameGrid == null)
+        if (GameManager == null || GameManager.GameGrid == null)
         {
             return;
         }
         Gizmos.color = Color.cyan;
-        int w = _gameManager.GameGrid.Width;
-        int h = _gameManager.GameGrid.Height;
-        int size = _gameManager.GameGrid.CellSize;
+        int w = GameManager.GameGrid.Width;
+        int h = GameManager.GameGrid.Height;
+        int size = GameManager.GameGrid.CellSize;
         float halfSize = size / 2f;
 
         float posX = 0 - ((w * size) + halfSize);
@@ -91,11 +92,11 @@ public class SpatialTester : MonoBehaviour
         RaycastHit hitInfo;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        if (Physics.Raycast(ray, out hitInfo, 20000, _groundMask))
+        if (Physics.Raycast(ray, out hitInfo, 20000, GroundMask))
         {
-            var pos = _gameManager.GameGrid.GetCellWorldCenter(hitInfo.point);
+            var pos = GameManager.GameGrid.GetCellWorldCenter(hitInfo.point);
 
-            Gizmos.DrawWireCube(pos, Vector3.one * _gameManager.GameGrid.CellSize);
+            Gizmos.DrawWireCube(pos, Vector3.one * GameManager.GameGrid.CellSize);
         }
     }
 }

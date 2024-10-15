@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using static UnityEngine.EventSystems.EventTrigger;
 
 public class GameGrid
 {
-
     private int _width, _height, _cellSize;
     public int Width => _width;
     public int Height => _height;
@@ -14,11 +14,19 @@ public class GameGrid
     private Dictionary<Vector2, GridCell> _grid = new();
     public int CellCount => _grid.Count;
 
-    public GameGrid(int mapWidth, int mapHeight, int cellSize)
+    private float _cellTickTimer = 0f;
+    private float _cellTickRate;
+
+    private GameManager _gameManager;
+    public GameManager Manager => _gameManager;
+
+    public GameGrid(int mapWidth, int mapHeight, int cellSize, float tickRate, GameManager gameManager)
     {
         _width = mapWidth;
         _height = mapHeight;
         _cellSize = cellSize;
+        _cellTickRate = tickRate;
+        _gameManager = gameManager;
     }
 
     public Vector3 ClampToCellBounds(Vector3 posToClamp)
@@ -50,7 +58,7 @@ public class GameGrid
 
         if (!_grid.ContainsKey(cellId))
         {
-            _grid.Add(cellId, new GridCell());
+            _grid.Add(cellId, new GridCell(this));
         }
 
         _grid[cellId].AddUnitToCell(unit);
@@ -93,7 +101,7 @@ public class GameGrid
         // validate this cell has even been registered
         if (!_grid.ContainsKey(cellId))
         {
-            _grid.Add(cellId, new GridCell());
+            _grid.Add(cellId, new GridCell(this));
             return null;
         }
 
@@ -117,5 +125,77 @@ public class GameGrid
 
         return closestEnemy;
         // we could also check the surrounding grid cells
+    }
+
+    public void OnUpdate()
+    {
+        _cellTickTimer += Time.deltaTime;
+
+        if (_cellTickTimer >= _cellTickRate)
+        {
+            _cellTickTimer = 0f;
+            TickAllGrids();
+        }
+    }
+
+    private void TickAllGrids()
+    {
+        foreach (GridCell grid in _grid.Values)
+        {
+            grid.OnTick();
+        }
+    }
+
+    private GridCell GetCellAtPosition(Vector3 position)
+    {
+        Vector3 currentPosition = ClampToCellBounds(position);
+
+        int cellX = (int)(currentPosition.x / _cellSize);
+        int cellZ = (int)(currentPosition.z / _cellSize);
+
+        var cellId = new Vector2Int(cellX, cellZ);
+
+        // validate this cell has even been registered
+        if (!_grid.ContainsKey(cellId))
+        {
+            _grid.Add(cellId, new GridCell(this));
+        }
+        return _grid[cellId];
+    }
+
+    public List<GridCell> GetCellsAroundPosition(Vector3 position, int range)
+    {
+        List<GridCell> cells = new();
+        
+        Vector3 centeredPosition = ClampToCellBounds(position);
+        
+        int cellX = (int)(centeredPosition.x / _cellSize);
+        int cellZ = (int)(centeredPosition.z / _cellSize);
+        
+        int minX = Mathf.Clamp(cellX - range, -Width, Width);
+        int maxX = Mathf.Clamp(cellX + range, minX, Width);
+        int minZ = Mathf.Clamp(cellZ - range, -Height, Height);
+        int maxZ = Mathf.Clamp(cellZ + range, minZ, Height);
+        
+        Debug.Log($"Getting cells between: {minX} to {maxX} horizontal and {minZ} to {maxZ} vertical");
+        for (int x = minX; x <= maxX; x++)
+        {
+            for (int z = minZ; z < maxZ; z++)
+            {
+                var cellId = new Vector2(x, z);
+                
+                if (!_grid.ContainsKey(cellId))
+                {
+                    _grid.Add(cellId, new GridCell(this));
+                }
+                
+                if (!cells.Contains(_grid[cellId]))
+                {
+                    cells.Add(GetCellAtPosition(cellId));
+                }
+            }
+        }
+
+        return cells;
     }
 }

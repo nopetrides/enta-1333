@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(
     fileName = "AllBuildingsData",
     menuName = "Create Scriptable Objects/All Buildings Data")]
 public class AllBuildingData : ScriptableObject
 {
-    [SerializeField] private BuildingData[] _data;
-    public BuildingData[] Data => _data;
+    [FormerlySerializedAs("_data")] [SerializeField] private BuildingData[] Data;
+    public BuildingData[] DataList => Data;
 }

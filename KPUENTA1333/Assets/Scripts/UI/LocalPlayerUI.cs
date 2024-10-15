@@ -1,13 +1,19 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace UI
 {
     public class LocalPlayerUI : MonoBehaviour
     {
-        [SerializeField] private TMP_Text _currentPowerAvailable;
-        
+        [FormerlySerializedAs("_currentPowerAvailable")] [SerializeField] private TMP_Text CurrentPowerAvailable;
+
+        public void Awake()
+        {
+            CurrentPowerAvailable.text = "Power: 0MW";
+        }
+
         public void SubscribeToPlayerUpdates(Player localPlayer)
         {
             localPlayer.OnPowerChanged += UpdateUI;
@@ -15,7 +21,7 @@ namespace UI
 
         private void UpdateUI(float currentPower)
         {
-            _currentPowerAvailable.text = $"Power: {currentPower}MW";
+            CurrentPowerAvailable.text = $"Power: {currentPower}MW";
         }
     }
 }

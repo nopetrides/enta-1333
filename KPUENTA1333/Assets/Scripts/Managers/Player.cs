@@ -11,12 +11,12 @@ public class Player
 
     public PlayerBuildingManager BuildingManager => _buildingManager;
 
-    public Player(int playerIndex)
+    public Player(int playerIndex, GameManager gameManager)
     {
         _playerIndex = playerIndex;
         _storedPower = 0;
 
-        _buildingManager = new PlayerBuildingManager(this);
+        _buildingManager = new PlayerBuildingManager(this, gameManager);
     }
 
     public void ResourceGain(float gain)

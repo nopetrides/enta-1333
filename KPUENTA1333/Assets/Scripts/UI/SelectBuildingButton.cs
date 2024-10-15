@@ -15,8 +15,8 @@ public class SelectBuildingButton : MonoBehaviour
         _data = data;
         _manager = manager;
         // setup ui of the button
-        BuildingSprite.sprite = data.BuildingSprite;
-        BuildingText.text = data.BuildingName;
+        BuildingSprite.sprite = data.UiSprite;
+        BuildingText.text = data.StructureName;
     }
 
     public void OnButtonSelected()

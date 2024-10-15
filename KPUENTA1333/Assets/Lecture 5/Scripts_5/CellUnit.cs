@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CellUnit : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed = 5f;
+    [FormerlySerializedAs("_moveSpeed")] [SerializeField] private float MoveSpeed = 5f;
 
     private int _faction;
     public int Faction => _faction;
@@ -13,6 +14,21 @@ public class CellUnit : MonoBehaviour
     private Vector3 _moveTarget;
     private Vector3 _previousPosition;
     private GameGrid _grid;
+
+    /// <summary>
+    /// todo Update with max health from scriptable object and only allow health to change via function
+    /// </summary>
+    private int _health = 20;
+
+    /// <summary>
+    /// todo clamp hp to 0 and max hp
+    /// </summary>
+    /// <param name="change"></param>
+    public void ChangeHealth(int change)
+    {
+        _health += change;
+        // todo death check
+    }
 
     public void Setup(int faction, int unitCounter, GameGrid gameGrid)
     {
@@ -29,7 +45,7 @@ public class CellUnit : MonoBehaviour
     public void RandomMove()
     {
         // lazy translate move instead of physics
-        transform.Translate(Vector3.forward * Time.deltaTime * _moveSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
 
         _grid.UpdateUnitCell(this, _previousPosition);
 
@@ -55,7 +71,7 @@ public class CellUnit : MonoBehaviour
     {
         transform.rotation = Quaternion.LookRotation(otherUnit.transform.position - transform.position);
 
-        transform.Translate(Vector3.forward * Time.deltaTime * _moveSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
 
         _grid.UpdateUnitCell(this, _previousPosition);
 

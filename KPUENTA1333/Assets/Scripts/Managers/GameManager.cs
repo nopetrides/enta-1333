@@ -1,64 +1,74 @@
 using System;
 using System.Collections.Generic;
+using Lecture_6;
 using UI;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private int _playerCount = 1;
-    [SerializeField] private BuildingPlacementManager _placementManager;
-    [SerializeField] private LocalPlayerUI _playerUI;
-    [SerializeField] private UnityEvent _myEvent;
-    [SerializeField] private Canvas[] _UIElements;
+    [FormerlySerializedAs("_playerCount")] [SerializeField] private int PlayerCount = 1;
+    [FormerlySerializedAs("_placementManager")] [SerializeField] private BuildingPlacementManager PlacementManager;
+    [FormerlySerializedAs("_playerUI")] [SerializeField] private LocalPlayerUI PlayerUI;
+    [FormerlySerializedAs("_myEvent")] [SerializeField] private UnityEvent MyEvent;
+    [FormerlySerializedAs("_UIElements")] [SerializeField] private Canvas[] UIElements;
 
     // Determine the grid size
-    [SerializeField] private int _gridWidth = 10, _gridHeight = 10, _cellSize = 10;
+    [FormerlySerializedAs("_gridWidth")] [SerializeField] private int GridWidth = 10;
+    [FormerlySerializedAs("_gridHeight")] [SerializeField] private int GridHeight = 10;
+    [FormerlySerializedAs("_cellSize")] [SerializeField] private int CellSize = 10;
+    [FormerlySerializedAs("_cellTickRate")] [SerializeField] private float CellTickRate;
+    [FormerlySerializedAs("_damageSystem")] [SerializeField] private DamageSystem DamageSystem;
 
-    private List<Player> playerController = new List<Player>();
+    private List<Player> _playerController = new List<Player>();
     
     private delegate void DisableUI();
-    private DisableUI toggleDelegate;
+    private DisableUI _toggleDelegate;
 
     private GameGrid _gameGrid;
     public GameGrid GameGrid => _gameGrid;
     
+    public DamageSystem CombatSystem => DamageSystem;
+    
     void Awake()
     {
-        toggleDelegate += ToggleAllUI;
-        toggleDelegate.Invoke();
+        _toggleDelegate += ToggleAllUI;
+        _toggleDelegate.Invoke();
 
-        _placementManager.SetGameManager(this);
+        PlacementManager.SetGameManager(this);
 
-        for (int i = 0; i < _playerCount; i++)
+        for (int i = 0; i < PlayerCount; i++)
         {
-            var player = new Player(i);
-            playerController.Add(player);
+            var player = new Player(i, this);
+            _playerController.Add(player);
             if (i == 0)
             {
-                _placementManager.SetLocalBuildingManager(player.BuildingManager);
-                _playerUI.SubscribeToPlayerUpdates(player);
+                PlacementManager.SetLocalBuildingManager(player.BuildingManager);
+                PlayerUI.SubscribeToPlayerUpdates(player);
             }
         }
-        _gameGrid = new GameGrid(_gridWidth, _gridHeight, _cellSize);
+        _gameGrid = new GameGrid(GridWidth, GridHeight, CellSize, CellTickRate, this);
     }
 
     private void Update()
     {
         if (Input.GetButtonDown("ToggleUI"))
         {
-            toggleDelegate.Invoke();
+            _toggleDelegate.Invoke();
         }
 
-        foreach (var p in playerController)
+        foreach (var p in _playerController)
         {
             p.BuildingManager.OnUpdate();
         }
+
+        _gameGrid.OnUpdate();
     }
 
     private void ToggleAllUI()
     {
-        foreach (var ui in _UIElements)
+        foreach (var ui in UIElements)
         {
             ui.enabled = !ui.enabled;
         }

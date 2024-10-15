@@ -8,25 +8,25 @@ public class PlacedBuildingBase : MonoBehaviour
     private int _currentHp;
     private int _buildingLevel;
 
-    protected PlayerBuildingManager _manager;
-    protected Player _owner;
+    protected PlayerBuildingManager Manager;
+    protected Player Owner;
 
     private void Start()
     {
-        _currentHp = ScriptedObjectData.MaxHp[0];
+        _currentHp = ScriptedObjectData.MaxHpPerLevel[0];
         _buildingLevel = 1;
     }
 
     public void SetManager(PlayerBuildingManager manager, ref Action onTick, Player owner)
     {
-        _manager = manager;
+        Manager = manager;
         onTick += Tick;
-        _owner = owner;
+        Owner = owner;
     }
 
     public void CalculateDamage(int damageReceived)
     {
-        damageReceived -= ScriptedObjectData.Armor;
+        damageReceived -= ScriptedObjectData.CurrentArmor;
         TakeDamage(damageReceived);
     }
     
@@ -43,4 +43,7 @@ public class PlacedBuildingBase : MonoBehaviour
     protected virtual void Tick()
     {
     }
+
+    public virtual void OnPlaced() { }
+    public virtual void OnRemoved() { }
 }
