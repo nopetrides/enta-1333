@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GridCell
 {
-    
     private List<CellUnit> _allUnits = new List<CellUnit>();
     Dictionary<int, Dictionary<string, CellUnit>> _unitsInCellByFaction = new Dictionary<int, Dictionary<string, CellUnit>>();
     private PlacedBuildingBase _buildingInCell;

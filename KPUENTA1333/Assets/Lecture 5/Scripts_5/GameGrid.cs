@@ -198,4 +198,20 @@ public class GameGrid
 
         return cells;
     }
+
+    public Vector3 FindClosestEnemySpawnBuilding()
+    {
+        // todo get the list of all enemy spawn building from each factions BuildingManager 
+        
+        // todo get the edge of the building (the cell it occupies)
+    }
+
+    public LinkedList<PathNode> FindPath(Vector3 StartPosition, Vector3 EndPosition)
+    {
+        // todo loop through the nodes along the path and try to find the least cost path to our objective
+        
+        // todo if our objective is blocked, find the least cost path and start destroying buildings in our way!
+        
+        // todo not here - When we are moving along the path, if we encounter enemy units, fight them first!
+    }
 }
