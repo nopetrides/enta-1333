@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     [FormerlySerializedAs("_cellTickRate")] [SerializeField] private float CellTickRate;
     [FormerlySerializedAs("_damageSystem")] [SerializeField] private DamageSystem DamageSystem;
 
-    private List<Player> _playerController = new List<Player>();
+    private SortedList<int,Player> _playerController = new ();
     
     private delegate void DisableUI();
     private DisableUI _toggleDelegate;
@@ -34,14 +34,14 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         _toggleDelegate += ToggleAllUI;
-        _toggleDelegate.Invoke();
 
         PlacementManager.SetGameManager(this);
 
         for (int i = 0; i < PlayerCount; i++)
         {
-            var player = new Player(i, this);
-            _playerController.Add(player);
+            // currently, all players are a different faction for pvp purposes
+            var player = new Player(i, i, this);
+            _playerController.Add(i, player);
             if (i == 0)
             {
                 PlacementManager.SetLocalBuildingManager(player.BuildingManager);
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
             _toggleDelegate.Invoke();
         }
 
-        foreach (var p in _playerController)
+        foreach (var p in _playerController.Values)
         {
             p.BuildingManager.OnUpdate();
         }
@@ -72,5 +72,16 @@ public class GameManager : MonoBehaviour
         {
             ui.enabled = !ui.enabled;
         }
+    }
+
+    //testing
+    public Player GetPlayer(int playerIndex)
+    {
+        Player pReturn;
+        if (!_playerController.TryGetValue(playerIndex, out pReturn))
+        {
+            Debug.LogError($"Tried to get player {playerIndex} but player does not exist!");
+        }
+        return pReturn;
     }
 }

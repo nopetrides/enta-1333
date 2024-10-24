@@ -24,6 +24,11 @@ public class PlacedBuildingBase : MonoBehaviour
         Owner = owner;
     }
 
+    public int GetFaction()
+    {
+        return Owner.PlayerFaction;
+    }
+
     public void CalculateDamage(int damageReceived)
     {
         damageReceived -= ScriptedObjectData.CurrentArmor;

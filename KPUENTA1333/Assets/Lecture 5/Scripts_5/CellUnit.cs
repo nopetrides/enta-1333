@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 public class CellUnit : MonoBehaviour
@@ -35,6 +36,7 @@ public class CellUnit : MonoBehaviour
         _faction = faction;
         name = $"P{faction}_{name}_{unitCounter}";
         _grid = gameGrid;
+        GetNewRandomTarget();
     }
 
     public void SetCell(GridCell gridCell)
@@ -51,7 +53,7 @@ public class CellUnit : MonoBehaviour
 
         _previousPosition = transform.position;
 
-        if ((transform.position - _moveTarget).magnitude < 1f)
+        if ((transform.position - _moveTarget).magnitude < 10f)
         {
             GetNewRandomTarget();
         }
@@ -62,14 +64,71 @@ public class CellUnit : MonoBehaviour
         int mapWidth = _grid.Width * _grid.CellSize;
         int mapHeight = _grid.Height * _grid.CellSize;
 
-        _moveTarget = new Vector3(Random.Range(-mapWidth, mapWidth), 5f, Random.Range(-mapHeight, mapHeight));
+        _moveTarget = new Vector3(Random.Range(-mapWidth, mapWidth), transform.position.y, Random.Range(-mapHeight, mapHeight));
 
         transform.rotation = Quaternion.LookRotation(_moveTarget - transform.position);
     }
 
     public void MoveToEnemy(CellUnit otherUnit)
     {
-        transform.rotation = Quaternion.LookRotation(otherUnit.transform.position - transform.position);
+        // in same cell
+        if (_grid.CellIdFromPosition(transform.position) == _grid.CellIdFromPosition(otherUnit.transform.position))
+        {
+            transform.rotation = Quaternion.LookRotation(otherUnit.transform.position - transform.position);
+        }
+        else
+        {
+            // else find path
+
+            var path = _grid.Pathfinder.FindShortestPath(PathfindingWithAStar.PathfindingType.AStarEuclid, transform.position, otherUnit.transform.position);
+
+            if (path == null)
+            {
+                Debug.LogWarning("Failed to find path!");
+                return;
+            }
+            var firstNode = path.FirstOrDefault();
+            if (firstNode == null)
+            {
+                Debug.LogWarning("Failed to find node!");
+                return;
+            }
+
+            transform.rotation = Quaternion.LookRotation(_grid.GetCellPositionFromId(firstNode));
+        }
+
+        transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
+
+        _grid.UpdateUnitCell(this, _previousPosition);
+
+        _previousPosition = transform.position;
+    }
+
+    public void MoveToEnemy(PlacedBuildingBase building)
+    {
+        // same cell
+        if (_grid.CellIdFromPosition(transform.position) == _grid.CellIdFromPosition(building.transform.position))
+        {
+            transform.rotation = Quaternion.LookRotation(building.transform.position - transform.position);
+        }
+        else
+        {
+            var path = _grid.Pathfinder.FindShortestPath(PathfindingWithAStar.PathfindingType.AStarEuclid, transform.position, building.transform.position);
+
+            if (path == null)
+            {
+                Debug.LogWarning("Failed to find path!");
+                return;
+            }
+            var firstNode = path.FirstOrDefault();
+            if (firstNode == null)
+            {
+                Debug.LogWarning("Failed to find node!");
+                return;
+            }
+
+            transform.rotation = Quaternion.LookRotation(_grid.GetCellPositionFromId(firstNode));
+        }
 
         transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
 

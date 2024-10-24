@@ -630,16 +630,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7651bdd1f32ef64e95f06fcfc8b1de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _zoomSpeed: 100
-  _zoomTime: 0.1
-  _maxHeight: 100
-  _minHeight: 20
-  _focusHeight: 10
-  _focusDistance: 20
-  _panBorder: 25
-  _dragPanSpeed: 25
-  _edgePanSpeed: 25
-  _keyPanSpeed: 25
+  ZoomSpeed: 100
+  ZoomTime: 0.1
+  MaxHeight: 100
+  MinHeight: 20
+  FocusHeight: 10
+  FocusDistance: 20
+  PanBorder: 25
+  DragPanSpeed: 25
+  EdgePanSpeed: 25
+  KeyPanSpeed: 25
 --- !u!1 &334962579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48ab5b3874374679a2e51946a4211490, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _currentPowerAvailable: {fileID: 463042722}
+  CurrentPowerAvailable: {fileID: 463042722}
 --- !u!114 &1006136879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6441,6 +6441,7 @@ GameObject:
   - component: {fileID: 1134170742}
   - component: {fileID: 1134170744}
   - component: {fileID: 1134170745}
+  - component: {fileID: 1134170746}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -6460,19 +6461,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdc6615e324054f4f9fb5feb85702595, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _allBuildingData: {fileID: 11400000, guid: 19b29835e4ec4416c91c8839c2ee00eb, type: 2}
-  _groundMask:
+  AllBuildingData: {fileID: 11400000, guid: 19b29835e4ec4416c91c8839c2ee00eb, type: 2}
+  GroundMask:
     serializedVersion: 2
     m_Bits: 64
-  _placementParticle: {fileID: 1094274870}
-  _canPlaceMaterial: {fileID: 2100000, guid: 548a704bb71cd449abdc7827e75559cf, type: 2}
-  _cannotPlaceMaterial: {fileID: 2100000, guid: 27f6b20239a084f92aaca8842bcabf1b,
-    type: 2}
-  _buildingMask:
+  PlacementParticle: {fileID: 1094274870}
+  CanPlaceMaterial: {fileID: 2100000, guid: 548a704bb71cd449abdc7827e75559cf, type: 2}
+  CannotPlaceMaterial: {fileID: 2100000, guid: 27f6b20239a084f92aaca8842bcabf1b, type: 2}
+  BuildingMask:
     serializedVersion: 2
     m_Bits: 128
-  _dismantleUI: {fileID: 334962585}
-  _gameManager: {fileID: 1134170744}
+  DismantleUI: {fileID: 334962585}
+  GameManager: {fileID: 1134170744}
 --- !u!4 &1134170743
 Transform:
   m_ObjectHideFlags: 0
@@ -6501,19 +6501,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f432419b1dc8c4db2d0b8d34387f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerCount: 1
-  _placementManager: {fileID: 1134170742}
-  _playerUI: {fileID: 1006136878}
-  _myEvent:
+  PlayerCount: 2
+  PlacementManager: {fileID: 1134170742}
+  PlayerUI: {fileID: 1006136878}
+  MyEvent:
     m_PersistentCalls:
       m_Calls: []
-  _UIElements:
+  UIElements:
   - {fileID: 1362675947}
   - {fileID: 334962584}
   - {fileID: 1006136881}
-  _gridWidth: 5
-  _gridHeight: 5
-  _cellSize: 20
+  GridWidth: 5
+  GridHeight: 5
+  CellSize: 20
+  CellTickRate: 0
+  DamageSystem: {fileID: 0}
 --- !u!114 &1134170745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6526,15 +6528,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb967ec9eedf78044a340b3d85fc185b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 1134170744}
-  _factionUnitA: {fileID: -2338863830924507341, guid: 384f5ae7d4a80854494711f5735c4cdf,
+  GameManager: {fileID: 1134170744}
+  FactionUnitA: {fileID: -2338863830924507341, guid: 384f5ae7d4a80854494711f5735c4cdf,
     type: 3}
-  _unitParentA: {fileID: 176209316}
-  _factionUnitB: {fileID: 1958641835811071374, guid: 1036565b86a23534b9af6b40389396fe,
+  UnitParentA: {fileID: 176209316}
+  FactionUnitB: {fileID: 1958641835811071374, guid: 1036565b86a23534b9af6b40389396fe,
     type: 3}
-  _unitParentB: {fileID: 715171539}
-  _unitsToTestWith: 100
-  _groundMask:
+  UnitParentB: {fileID: 715171539}
+  UnitsToTestWith: 100
+  GroundMask:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &1134170746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134170741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fbf9a1f81396f04c8a64fd0c1d83c04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameManager: {fileID: 1134170744}
+  FactionUnitA: {fileID: -2338863830924507341, guid: 384f5ae7d4a80854494711f5735c4cdf,
+    type: 3}
+  UnitParentA: {fileID: 176209316}
+  FactionUnitB: {fileID: 1958641835811071374, guid: 1036565b86a23534b9af6b40389396fe,
+    type: 3}
+  UnitParentB: {fileID: 715171539}
+  UnitsToTestWith: 100
+  GroundMask:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1236145300
@@ -6927,7 +6952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b66bbb9c20d34487780d50a3bb18bcb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _buildingPlacementManager: {fileID: 1134170742}
+  BuildingPlacementManager: {fileID: 1134170742}
   SelectBuildingButton: {fileID: 6073901873303504758, guid: 6c2903739638b4316abd9036298eed36,
     type: 3}
   ScrollRectContent: {fileID: 1236145301}

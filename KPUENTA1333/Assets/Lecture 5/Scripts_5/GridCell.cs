@@ -7,6 +7,14 @@ public class GridCell
     private List<CellUnit> _allUnits = new List<CellUnit>();
     Dictionary<int, Dictionary<string, CellUnit>> _unitsInCellByFaction = new Dictionary<int, Dictionary<string, CellUnit>>();
     private PlacedBuildingBase _buildingInCell;
+    public PlacedBuildingBase BuildingInCell => _buildingInCell;
+
+    public bool _isWalkable = true;
+    public bool Walkable => _isWalkable;
+
+    public int _obstacleLevel = 1; // 1 is normal movement
+    public int ObstacleLevel => _obstacleLevel;
+
     private GameGrid _parentGrid;
     private int _netHpChangePerTick;
     

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class GameGrid
 {
@@ -20,6 +18,9 @@ public class GameGrid
     private GameManager _gameManager;
     public GameManager Manager => _gameManager;
 
+    private PathfindingWithAStar _pathfinder;
+    public PathfindingWithAStar Pathfinder => _pathfinder;
+
     public GameGrid(int mapWidth, int mapHeight, int cellSize, float tickRate, GameManager gameManager)
     {
         _width = mapWidth;
@@ -27,6 +28,31 @@ public class GameGrid
         _cellSize = cellSize;
         _cellTickRate = tickRate;
         _gameManager = gameManager;
+        GenerateGrid();
+        _pathfinder = new PathfindingWithAStar(this, _grid);
+    }
+
+    private void GenerateGrid()
+    {
+        int w = _width;
+        int h = _height;
+        int size = _cellSize;
+        float halfSize = size / 2f;
+
+        float posX = 0 - ((w * size) + halfSize);
+        for (int i = -w; i <= w + 1; i++)
+        {
+            float posZ = 0 - ((h * size) + halfSize);
+            for (int j = -h; j <= h + 1; j++)
+            {
+                posZ += size;
+
+                var cellId = new Vector2Int(i, j);
+
+                _grid.Add(cellId, new GridCell(this));
+            }
+            posX += size;
+        }
     }
 
     public Vector3 ClampToCellBounds(Vector3 posToClamp)
@@ -127,6 +153,50 @@ public class GameGrid
         // we could also check the surrounding grid cells
     }
 
+    public Vector2 CellIdFromPosition(Vector3 position)
+    {
+        Vector3 currentPosition = ClampToCellBounds(position);
+
+        int cellX = (int)(currentPosition.x / _cellSize);
+        int cellZ = (int)(currentPosition.z / _cellSize);
+
+        return new Vector2Int(cellX, cellZ);
+    }
+
+    public Vector3 GetCellPositionFromId(Vector2 cellId)
+    {
+        int cellX = (int)(cellId.x * _cellSize);
+        int cellZ = (int)(cellId.y * _cellSize);
+
+        return new Vector3(cellX, 0, cellZ);
+    }
+
+    public PlacedBuildingBase FindClosestEnemySpawnBuilding(CellUnit unitSearching)
+    {
+        PlacedBuildingBase closestEnemySpawnBuilding = null;
+
+        float smallestDistance = Mathf.Infinity;
+
+        // todo, optimize to check a list of buildings instead of the entire grid
+        foreach (var cell in _grid)
+        {
+            var building = cell.Value.BuildingInCell;
+            if (building != null && 
+                building is TownCenter && 
+                building.GetFaction() != unitSearching.Faction)
+            {
+                float distSqr = (building.transform.position - unitSearching.transform.position).sqrMagnitude;
+
+                if (distSqr < smallestDistance)
+                {
+                    smallestDistance = distSqr;
+                    closestEnemySpawnBuilding = building;
+                }
+            }
+        }
+        return closestEnemySpawnBuilding;
+    }
+
     public void OnUpdate()
     {
         _cellTickTimer += Time.deltaTime;
@@ -180,7 +250,7 @@ public class GameGrid
         Debug.Log($"Getting cells between: {minX} to {maxX} horizontal and {minZ} to {maxZ} vertical");
         for (int x = minX; x <= maxX; x++)
         {
-            for (int z = minZ; z < maxZ; z++)
+            for (int z = minZ; z <= maxZ; z++)
             {
                 var cellId = new Vector2(x, z);
                 
@@ -202,16 +272,18 @@ public class GameGrid
     public Vector3 FindClosestEnemySpawnBuilding()
     {
         // todo get the list of all enemy spawn building from each factions BuildingManager 
-        
+
         // todo get the edge of the building (the cell it occupies)
+        return Vector3.zero;
     }
 
     public LinkedList<PathNode> FindPath(Vector3 StartPosition, Vector3 EndPosition)
     {
         // todo loop through the nodes along the path and try to find the least cost path to our objective
-        
+
         // todo if our objective is blocked, find the least cost path and start destroying buildings in our way!
-        
+
         // todo not here - When we are moving along the path, if we encounter enemy units, fight them first!
+        return new LinkedList<PathNode>();
     }
 }
